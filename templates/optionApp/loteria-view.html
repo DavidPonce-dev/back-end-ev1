@@ -1,0 +1,9 @@
+<h1>Estos son los números de la suerte en este momento</h1>
+
+<ul>
+  {% for n in numerosLoteria %}
+  <li>{{n}}</li>
+  {% endfor %}
+</ul>
+<br />
+<a href="{% url 'menuApp:home' %}"> Volver </a>

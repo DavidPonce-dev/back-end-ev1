@@ -1,0 +1,20 @@
+<h1>Mis Países Favoritos</h1>
+
+<table style="border: 1px solid black">
+  <tr>
+    <th>País</th>
+    <th>Continente</th>
+    <th>Bandera</th>
+  </tr>
+  {% for pais in paises %}
+  <tr>
+    <td style="border: 1px solid black">{{pais.nombre}}</td>
+    <td style="border: 1px solid black">{{pais.continente}}</td>
+    <td style="border: 1px solid black">
+      <img src="{{pais.imagen}}" width="200px" height="120px" />
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<br />
+<a href="{% url 'menuApp:home' %}"> Volver </a>
